@@ -1,7 +1,7 @@
 # number-converter
 This application allows a user to input a number and convert that number between decimal, binary, and hexadecimal values.
 
-To start this application, in the project directory, you can run:
+To start this application, in the ### `frontend` directory, you can run:
 
 ### `npm start`
 
