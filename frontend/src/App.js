@@ -1,5 +1,5 @@
-// import logo from './logo.svg';
 import './App.css';
+import FormContainer from './components/formContainer';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <h1>Number Converter</h1>
       </header>
       <main>
-        
+        <FormContainer />
       </main>
     </div>
   );
