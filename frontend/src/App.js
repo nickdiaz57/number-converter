@@ -1,5 +1,5 @@
 import './App.css';
-import FormContainer from './components/formContainer';
+import Form from './components/form';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <h1>Number Converter</h1>
       </header>
       <main>
-        <FormContainer />
+        <Form />
       </main>
     </div>
   );

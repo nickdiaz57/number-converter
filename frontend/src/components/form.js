@@ -53,11 +53,9 @@ export default class Form extends Component {
     binaryConversions = (num) => {
         switch (this.state.outputType){
             case 'decimal':
-                //convert binary to decimal
-                break;
+                return parseInt(num, 2).toString()
             case 'hexadecimal':
-                //convert binary to hex
-                break;
+                return parseInt(num, 2).toString(16)
             default:
                 return num
         }
@@ -66,11 +64,9 @@ export default class Form extends Component {
     hexConversions = (num) => {
         switch (this.state.outputType){
             case 'decimal':
-                //convert hex to decimal
-                break;
+                return parseInt(num, 16).toString()
             case 'binary':
-                //convert hex to binary
-                break;
+                return parseInt(num, 16).toString(2)
             default:
                 return num
         }
@@ -81,7 +77,7 @@ export default class Form extends Component {
             <>
             <form onSubmit={this.handleSubmit}>
                 <div className='inputButtons'>
-                    <h3>Input Type</h3>
+                    <h3>Input Type:</h3>
                     <label>
                         Decimal
                         <input type='radio' value='decimal' checked={this.state.inputType === 'decimal'} onChange={this.selectInput} />
@@ -101,7 +97,7 @@ export default class Form extends Component {
                     <button id='Submit' type='submit'>Submit</button>
                 </div>
                 <div className='outputButtons'>
-                    <h3>Convert To</h3>
+                    <h3>Convert To:</h3>
                     <label>
                         Decimal
                         <input type='radio' value='decimal' checked={this.state.outputType === 'decimal'} onChange={this.selectOutput} />
